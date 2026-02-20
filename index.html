@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Bank System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📚 BOOK BANK SYSTEM</h1>
+
+<div id="loginSection">
+    <h2>Login</h2>
+    <select id="role">
+        <option value="customer">Customer</option>
+        <option value="librarian">Librarian</option>
+    </select>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="loginMsg"></p>
+</div>
+
+<div id="menuSection" class="hidden">
+    <h2 id="welcome"></h2>
+    <div id="menuButtons"></div>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<div id="bookSection" class="hidden">
+    <h3>Book List</h3>
+    <ul id="bookList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>index.html
